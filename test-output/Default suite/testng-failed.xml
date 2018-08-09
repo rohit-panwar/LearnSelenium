@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.Day_1">
+      <class name="basics.Day_2">
         <methods>
-          <include name="launchFirefox"/>
+          <include name="launchSafari"/>
         </methods>
-      </class> <!-- basics.Day_1 -->
+      </class> <!-- basics.Day_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
