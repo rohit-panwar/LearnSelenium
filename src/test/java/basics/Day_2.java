@@ -11,5 +11,4 @@ public class Day_2 {
 		WebDriver driver = new SafariDriver();
 		driver.get("https://google.com");
 	}
-
 }
