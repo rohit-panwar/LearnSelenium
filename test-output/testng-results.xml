@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6880" started-at="2018-08-09T16:37:34Z" finished-at="2018-08-09T16:37:41Z">
+  <suite name="Default suite" duration-ms="75416" started-at="2018-08-13T16:46:15Z" finished-at="2018-08-13T16:47:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6880" started-at="2018-08-09T16:37:34Z" finished-at="2018-08-09T16:37:41Z">
-      <class name="basics.Day_4">
-        <test-method status="PASS" signature="alertTest()[pri:0, instance:basics.Day_4@4b9e13df]" name="alertTest" duration-ms="6832" started-at="2018-08-09T16:37:34Z" finished-at="2018-08-09T16:37:41Z">
+    <test name="Default test" duration-ms="75416" started-at="2018-08-13T16:46:15Z" finished-at="2018-08-13T16:47:30Z">
+      <class name="basics.Day_6">
+        <test-method status="PASS" signature="findAllLinks()[pri:0, instance:basics.Day_6@26be92ad]" name="findAllLinks" duration-ms="75369" started-at="2018-08-13T16:46:15Z" finished-at="2018-08-13T16:47:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertTest -->
-      </class> <!-- basics.Day_4 -->
+        </test-method> <!-- findAllLinks -->
+      </class> <!-- basics.Day_6 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
