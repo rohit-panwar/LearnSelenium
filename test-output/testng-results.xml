@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75416" started-at="2018-08-13T16:46:15Z" finished-at="2018-08-13T16:47:30Z">
+  <suite name="Default suite" duration-ms="21434" started-at="2018-08-13T17:53:03Z" finished-at="2018-08-13T17:53:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75416" started-at="2018-08-13T16:46:15Z" finished-at="2018-08-13T16:47:30Z">
-      <class name="basics.Day_6">
-        <test-method status="PASS" signature="findAllLinks()[pri:0, instance:basics.Day_6@26be92ad]" name="findAllLinks" duration-ms="75369" started-at="2018-08-13T16:46:15Z" finished-at="2018-08-13T16:47:30Z">
+    <test name="Default test" duration-ms="21434" started-at="2018-08-13T17:53:03Z" finished-at="2018-08-13T17:53:25Z">
+      <class name="basics.Day_7">
+        <test-method status="PASS" signature="explicitWait()[pri:0, instance:basics.Day_7@46d56d67]" name="explicitWait" duration-ms="21336" started-at="2018-08-13T17:53:04Z" finished-at="2018-08-13T17:53:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findAllLinks -->
-      </class> <!-- basics.Day_6 -->
+        </test-method> <!-- explicitWait -->
+      </class> <!-- basics.Day_7 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
