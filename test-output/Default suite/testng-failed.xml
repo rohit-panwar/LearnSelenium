@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.Day_6">
+      <class name="basics.Day_8">
         <methods>
-          <include name="findAllLinks"/>
+          <include name="filePopup"/>
         </methods>
-      </class> <!-- basics.Day_6 -->
+      </class> <!-- basics.Day_8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
