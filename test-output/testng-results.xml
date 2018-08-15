@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18822" started-at="2018-08-15T06:09:16Z" finished-at="2018-08-15T06:09:35Z">
+  <suite name="Default suite" duration-ms="14274" started-at="2018-08-15T10:41:52Z" finished-at="2018-08-15T10:42:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18822" started-at="2018-08-15T06:09:16Z" finished-at="2018-08-15T06:09:35Z">
-      <class name="basics.Day_10">
-        <test-method status="PASS" signature="htmlUnitDriver()[pri:0, instance:basics.Day_10@29b5cd00]" name="htmlUnitDriver" duration-ms="18762" started-at="2018-08-15T06:09:16Z" finished-at="2018-08-15T06:09:35Z">
+    <test name="Default test" duration-ms="14274" started-at="2018-08-15T10:41:52Z" finished-at="2018-08-15T10:42:06Z">
+      <class name="basics.Day_11">
+        <test-method status="PASS" signature="hightlightElement()[pri:0, instance:basics.Day_11@42d8062c]" name="hightlightElement" duration-ms="14222" started-at="2018-08-15T10:41:52Z" finished-at="2018-08-15T10:42:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- htmlUnitDriver -->
-      </class> <!-- basics.Day_10 -->
+        </test-method> <!-- hightlightElement -->
+      </class> <!-- basics.Day_11 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
