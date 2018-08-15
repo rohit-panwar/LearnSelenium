@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26254" started-at="2018-08-15T05:35:45Z" finished-at="2018-08-15T05:36:11Z">
+  <suite name="Default suite" duration-ms="18822" started-at="2018-08-15T06:09:16Z" finished-at="2018-08-15T06:09:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26254" started-at="2018-08-15T05:35:45Z" finished-at="2018-08-15T05:36:11Z">
-      <class name="basics.Day_9">
-        <test-method status="PASS" signature="readPropertyFile()[pri:0, instance:basics.Day_9@4b9e13df]" name="readPropertyFile" duration-ms="26187" started-at="2018-08-15T05:35:45Z" finished-at="2018-08-15T05:36:11Z">
+    <test name="Default test" duration-ms="18822" started-at="2018-08-15T06:09:16Z" finished-at="2018-08-15T06:09:35Z">
+      <class name="basics.Day_10">
+        <test-method status="PASS" signature="htmlUnitDriver()[pri:0, instance:basics.Day_10@29b5cd00]" name="htmlUnitDriver" duration-ms="18762" started-at="2018-08-15T06:09:16Z" finished-at="2018-08-15T06:09:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readPropertyFile -->
-      </class> <!-- basics.Day_9 -->
+        </test-method> <!-- htmlUnitDriver -->
+      </class> <!-- basics.Day_10 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
