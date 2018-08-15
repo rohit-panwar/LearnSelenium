@@ -41,11 +41,12 @@ public class Day_12 {
 		System.out.println(getInnerTextByJS(driver));
 		
 		// 7. To scroll to page end using JavaScript
-		scrollPageDown(driver);
+		//scrollPageDown(driver);
 		
 		// 8. To scroll to any element using JavaScript
-		WebElement logout=driver.findElement(By.id(" "));
+		WebElement logout=driver.findElement(By.linkText("Forgot Password?"));
 		scrollIntoView(driver, logout);
+		logout.click();
 		
 	}
 	
