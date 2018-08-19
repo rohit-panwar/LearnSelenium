@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16712" started-at="2018-08-18T12:29:58Z" finished-at="2018-08-18T12:30:15Z">
+  <suite name="Default suite" duration-ms="36216" started-at="2018-08-19T15:03:31Z" finished-at="2018-08-19T15:04:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16712" started-at="2018-08-18T12:29:58Z" finished-at="2018-08-18T12:30:15Z">
-      <class name="basics.Day_17">
-        <test-method status="PASS" signature="datePickerByJS()[pri:0, instance:basics.Day_17@42d8062c]" name="datePickerByJS" duration-ms="16659" started-at="2018-08-18T12:29:58Z" finished-at="2018-08-18T12:30:15Z">
+    <test name="Default test" duration-ms="36216" started-at="2018-08-19T15:03:31Z" finished-at="2018-08-19T15:04:07Z">
+      <class name="basics.Day_19">
+        <test-method status="PASS" signature="datePickerByJS()[pri:0, instance:basics.Day_19@29b5cd00]" name="datePickerByJS" duration-ms="36124" started-at="2018-08-19T15:03:31Z" finished-at="2018-08-19T15:04:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datePickerByJS -->
-      </class> <!-- basics.Day_17 -->
+      </class> <!-- basics.Day_19 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
