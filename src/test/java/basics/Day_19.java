@@ -28,20 +28,21 @@ public class Day_19 {
 			System.out.println(list.get(i).getText());
 		}
 	}
-	
+
 	@Test
 	public void bootStrapDropDown2() {
 		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://v4-alpha.getbootstrap.com/components/dropdowns/");
-		
+
 		driver.findElement(By.id("dropdownMenuButton")).click();
-		
-		List<WebElement> list2= driver.findElements(By.xpath("//div[contains(@class,'dropdown-menu')]//a"));
-		
-		System.out.println("Total Element: "+list2.size());
-		for(int i=0; i<list2.size();i++) {
+
+		List<WebElement> list2 = driver
+				.findElements(By.xpath("//div[@class='dropdown-menu' and @aria-labelledby='dropdownMenuButton']//a"));
+
+		System.out.println("Total Element: " + list2.size());
+		for (int i = 0; i < list2.size(); i++) {
 			System.out.println(list2.get(i).getText());
 		}
 	}

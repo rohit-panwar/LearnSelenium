@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15106" started-at="2018-08-19T15:13:44Z" finished-at="2018-08-19T15:13:59Z">
+  <suite name="Default suite" duration-ms="167756" started-at="2018-08-19T15:17:29Z" finished-at="2018-08-19T15:20:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15106" started-at="2018-08-19T15:13:44Z" finished-at="2018-08-19T15:13:59Z">
+    <test name="Default test" duration-ms="167756" started-at="2018-08-19T15:17:29Z" finished-at="2018-08-19T15:20:17Z">
       <class name="basics.Day_19">
-        <test-method status="PASS" signature="bootStrapDropDown2()[pri:0, instance:basics.Day_19@42d8062c]" name="bootStrapDropDown2" duration-ms="15063" started-at="2018-08-19T15:13:44Z" finished-at="2018-08-19T15:13:59Z">
+        <test-method status="PASS" signature="bootStrapDropDown2()[pri:0, instance:basics.Day_19@42d8062c]" name="bootStrapDropDown2" duration-ms="167715" started-at="2018-08-19T15:17:29Z" finished-at="2018-08-19T15:20:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bootStrapDropDown2 -->
