@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sikuli.LearnSikuli">
+      <class name="advanced.URL_authentication">
         <methods>
-          <include name="googleTestBySikuli"/>
+          <include name="basic_auth"/>
         </methods>
-      </class> <!-- sikuli.LearnSikuli -->
+      </class> <!-- advanced.URL_authentication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17545" started-at="2018-08-20T16:43:36Z" finished-at="2018-08-20T16:43:53Z">
+  <suite name="Default suite" duration-ms="28757" started-at="2018-08-29T16:54:14Z" finished-at="2018-08-29T16:54:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17545" started-at="2018-08-20T16:43:36Z" finished-at="2018-08-20T16:43:53Z">
-      <class name="advanced.HeadLessChrome">
-        <test-method status="PASS" signature="headLessTesting()[pri:0, instance:advanced.HeadLessChrome@1e7c7811]" name="headLessTesting" duration-ms="17478" started-at="2018-08-20T16:43:36Z" finished-at="2018-08-20T16:43:53Z">
+    <test name="Default test" duration-ms="28757" started-at="2018-08-29T16:54:14Z" finished-at="2018-08-29T16:54:43Z">
+      <class name="advanced.URL_authentication">
+        <test-method status="PASS" signature="basic_auth()[pri:0, instance:advanced.URL_authentication@1e7c7811]" name="basic_auth" duration-ms="28673" started-at="2018-08-29T16:54:14Z" finished-at="2018-08-29T16:54:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- headLessTesting -->
-      </class> <!-- advanced.HeadLessChrome -->
+        </test-method> <!-- basic_auth -->
+      </class> <!-- advanced.URL_authentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
