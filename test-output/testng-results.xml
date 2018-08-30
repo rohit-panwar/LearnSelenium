@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28757" started-at="2018-08-29T16:54:14Z" finished-at="2018-08-29T16:54:43Z">
+  <suite name="Default suite" duration-ms="61010" started-at="2018-08-30T14:39:42Z" finished-at="2018-08-30T14:40:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28757" started-at="2018-08-29T16:54:14Z" finished-at="2018-08-29T16:54:43Z">
-      <class name="advanced.URL_authentication">
-        <test-method status="PASS" signature="basic_auth()[pri:0, instance:advanced.URL_authentication@1e7c7811]" name="basic_auth" duration-ms="28673" started-at="2018-08-29T16:54:14Z" finished-at="2018-08-29T16:54:43Z">
+    <test name="Default test" duration-ms="61010" started-at="2018-08-30T14:39:42Z" finished-at="2018-08-30T14:40:43Z">
+      <class name="advanced.BrokenLinks">
+        <test-method status="PASS" signature="findBrokenLinks()[pri:0, instance:advanced.BrokenLinks@1e7c7811]" name="findBrokenLinks" duration-ms="60972" started-at="2018-08-30T14:39:42Z" finished-at="2018-08-30T14:40:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basic_auth -->
-      </class> <!-- advanced.URL_authentication -->
+        </test-method> <!-- findBrokenLinks -->
+      </class> <!-- advanced.BrokenLinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
