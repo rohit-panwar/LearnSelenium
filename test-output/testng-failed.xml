@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advanced.HTMLtable">
+      <class name="advanced.SeleniumGrid">
         <methods>
-          <include name="readHTMLtablePushToExcel"/>
+          <include name="grid"/>
         </methods>
-      </class> <!-- advanced.HTMLtable -->
+      </class> <!-- advanced.SeleniumGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
