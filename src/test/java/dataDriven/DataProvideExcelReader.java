@@ -2,8 +2,6 @@ package dataDriven;
 
 import java.util.ArrayList;
 
-import org.openqa.selenium.By;
-
 public class DataProvideExcelReader {
 
 	static Xls_Reader reader;
