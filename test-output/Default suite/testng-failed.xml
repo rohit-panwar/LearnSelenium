@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDriven.TestDataPovider">
+      <class name="retryLogic.RetryTest">
         <methods>
-          <include name="dataProviderTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="test1"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- dataDriven.TestDataPovider -->
+      </class> <!-- retryLogic.RetryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

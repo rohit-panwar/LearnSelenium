@@ -19,6 +19,7 @@ public class Day_4 {
 		driver.findElement(By.name("proceed")).click();
 		Alert a= driver.switchTo().alert();
 		a.accept();
+	
 		//a.dismiss();
 	}
 

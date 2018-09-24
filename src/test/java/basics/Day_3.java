@@ -31,6 +31,8 @@ public class Day_3 {
 		driver.findElement(By.className("button")).click();
 		
 		// 5. Search using CSSSelector
+		// Id #
+		// Class .
 		System.out.println(driver.findElement(By.cssSelector("#et-info-phone")).getText());
 		System.out.println(driver.findElement(By.cssSelector(".myaccount_user")).getText());
 		
@@ -48,6 +50,7 @@ public class Day_3 {
 		System.setProperty("webdriver.ie.driver", "D:\\Webdriver\\drivers\\IEDriverServer.exe");
 		WebDriver driver= new InternetExplorerDriver();
 		
+		//<input type="file" name="fileupload" value="fileupload" id="fileupload">
 		driver.get("https://html.com/input-type-file/");
 		driver.findElement(By.id("fileupload")).sendKeys("C:\\Users\\Rohit\\Desktop\\seleniumAttachment.txt");
 	}

@@ -16,6 +16,8 @@ public class LearnSikuli {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		
+		driver.manage().window().maximize();
+		
 		Screen s= new Screen();
 		
 		// Click on "Sign In" button
