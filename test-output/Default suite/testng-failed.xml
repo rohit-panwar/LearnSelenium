@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="retryLogic.RetryTest">
+      <class name="sikuli.LearnSikuli">
         <methods>
-          <include name="test1"/>
-          <include name="test2"/>
+          <include name="googleTestBySikuli"/>
+          <include name="dragNdrop"/>
+          <include name="elementExist"/>
         </methods>
-      </class> <!-- retryLogic.RetryTest -->
+      </class> <!-- sikuli.LearnSikuli -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
