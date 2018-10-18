@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4836" started-at="2018-09-25T16:02:45Z" finished-at="2018-09-25T16:02:50Z">
+  <suite name="Default suite" duration-ms="23291" started-at="2018-10-18T17:09:03Z" finished-at="2018-10-18T17:09:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4836" started-at="2018-09-25T16:02:45Z" finished-at="2018-09-25T16:02:50Z">
-      <class name="sikuli.LearnSikuli">
-        <test-method status="PASS" signature="dragNdrop()[pri:0, instance:sikuli.LearnSikuli@6950e31]" name="dragNdrop" duration-ms="4788" started-at="2018-09-25T16:02:45Z" finished-at="2018-09-25T16:02:50Z">
+    <test name="Default test" duration-ms="23291" started-at="2018-10-18T17:09:03Z" finished-at="2018-10-18T17:09:26Z">
+      <class name="advanced.BarCodeReader">
+        <test-method status="PASS" signature="readBarCode()[pri:0, instance:advanced.BarCodeReader@74a10858]" name="readBarCode" duration-ms="23244" started-at="2018-10-18T17:09:03Z" finished-at="2018-10-18T17:09:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragNdrop -->
-      </class> <!-- sikuli.LearnSikuli -->
+        </test-method> <!-- readBarCode -->
+      </class> <!-- advanced.BarCodeReader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
