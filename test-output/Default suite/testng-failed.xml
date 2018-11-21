@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advanced.HeadLessFirefox">
+      <class name="advanced.PDFReader">
         <methods>
-          <include name="launchFirefoxAsHeadless"/>
+          <include name="readPDFTest"/>
         </methods>
-      </class> <!-- advanced.HeadLessFirefox -->
+      </class> <!-- advanced.PDFReader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
