@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23248" started-at="2018-11-22T17:09:33Z" finished-at="2018-11-22T17:09:57Z">
+  <suite name="Default suite" duration-ms="35298" started-at="2021-05-28T17:52:14 IST" finished-at="2021-05-28T17:52:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23248" started-at="2018-11-22T17:09:33Z" finished-at="2018-11-22T17:09:57Z">
-      <class name="advanced.AdvancedLocator">
-        <test-method status="PASS" signature="LocatorTest()[pri:0, instance:advanced.AdvancedLocator@33723e30]" name="LocatorTest" duration-ms="23217" started-at="2018-11-22T17:09:33Z" finished-at="2018-11-22T17:09:57Z">
+    <test name="Default test" duration-ms="35298" started-at="2021-05-28T17:52:14 IST" finished-at="2021-05-28T17:52:49 IST">
+      <class name="basics.Day_5">
+        <test-method status="PASS" signature="keyBorad()[pri:0, instance:basics.Day_5@12028586]" name="keyBorad" duration-ms="35221" started-at="2021-05-28T17:52:14 IST" finished-at="2021-05-28T17:52:49 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LocatorTest -->
-      </class> <!-- advanced.AdvancedLocator -->
+        </test-method> <!-- keyBorad -->
+      </class> <!-- basics.Day_5 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
