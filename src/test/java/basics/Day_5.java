@@ -58,8 +58,8 @@ public class Day_5 {
 		action.clickAndHold(w2).moveToElement(w3).release().build().perform();
 	}
 	
-	@Test
-	public void keyBorad() {
+	@Test(description="Keyboard Events")
+	public void keyBorad() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -67,12 +67,18 @@ public class Day_5 {
 		driver.get("http://www.seleniumframework.com/Practiceform/");
 		WebElement w1=driver.findElement(By.name("email"));
 		w1.sendKeys("India");
-		w1.clear();
-		
+				
 		Actions actions= new Actions(driver);
-		//actions.keyDown("A").sendKeys(w1, Keys.)
-		actions.moveToElement(w1).click().keyDown(Keys.SHIFT).sendKeys("aaaaa");
-		System.out.println("**********");
+		
+		actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
+		actions.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).build().perform();
+		actions.sendKeys(Keys.TAB).build().perform();
+		actions.sendKeys(Keys.TAB).build().perform();
+		actions.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();
+		actions.sendKeys(Keys.ENTER).build().perform();
+		//actions.contextClick().build().perform();
+		//Thread.sleep(2000);
+		actions.contextClick(w1).build().perform();
 	}
 
 }

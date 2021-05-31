@@ -10,8 +10,9 @@ public class Day_14 {
 	@Test
 	public void dynamicGoogleSearch() throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		driver.get(
 				"http://www.espncricinfo.com/series/8039/scorecard/433606/india-vs-sri-lanka-final-icc-cricket-world-cup-2010-11");

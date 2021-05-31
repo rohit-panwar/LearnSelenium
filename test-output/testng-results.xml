@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35298" started-at="2021-05-28T17:52:14 IST" finished-at="2021-05-28T17:52:49 IST">
+  <suite name="Default suite" duration-ms="13494" started-at="2021-05-31T17:58:44 IST" finished-at="2021-05-31T17:58:58 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35298" started-at="2021-05-28T17:52:14 IST" finished-at="2021-05-28T17:52:49 IST">
-      <class name="basics.Day_5">
-        <test-method status="PASS" signature="keyBorad()[pri:0, instance:basics.Day_5@12028586]" name="keyBorad" duration-ms="35221" started-at="2021-05-28T17:52:14 IST" finished-at="2021-05-28T17:52:49 IST">
+    <test name="Default test" duration-ms="13494" started-at="2021-05-31T17:58:44 IST" finished-at="2021-05-31T17:58:58 IST">
+      <class name="basics.Day_19">
+        <test-method status="PASS" signature="bootStrapDropDown2()[pri:0, instance:basics.Day_19@12028586]" name="bootStrapDropDown2" duration-ms="13437" started-at="2021-05-31T17:58:44 IST" finished-at="2021-05-31T17:58:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- keyBorad -->
-      </class> <!-- basics.Day_5 -->
+        </test-method> <!-- bootStrapDropDown2 -->
+      </class> <!-- basics.Day_19 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

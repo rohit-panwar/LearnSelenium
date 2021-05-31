@@ -10,9 +10,7 @@ public class Day_10 {
 	@Test
 	public void htmlUnitDriver() {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-
-		//WebDriver driver = new ChromeDriver();
+		//Headless browser
 		WebDriver driver= new HtmlUnitDriver();
 		
 		driver.get("http://test1.absofttrainings.com");
