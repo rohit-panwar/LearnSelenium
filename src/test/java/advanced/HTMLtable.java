@@ -9,7 +9,7 @@ public class HTMLtable {
 	
 	@Test
 	public void readHTMLtable() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		
 		driver.get("https://www.w3schools.com/html/html_tables.asp");

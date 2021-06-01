@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13494" started-at="2021-05-31T17:58:44 IST" finished-at="2021-05-31T17:58:58 IST">
+  <suite name="Default suite" duration-ms="78087" started-at="2021-06-01T17:50:42 IST" finished-at="2021-06-01T17:52:01 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13494" started-at="2021-05-31T17:58:44 IST" finished-at="2021-05-31T17:58:58 IST">
-      <class name="basics.Day_19">
-        <test-method status="PASS" signature="bootStrapDropDown2()[pri:0, instance:basics.Day_19@12028586]" name="bootStrapDropDown2" duration-ms="13437" started-at="2021-05-31T17:58:44 IST" finished-at="2021-05-31T17:58:58 IST">
+    <test name="Default test" duration-ms="78087" started-at="2021-06-01T17:50:42 IST" finished-at="2021-06-01T17:52:01 IST">
+      <class name="advanced.HTMLtable">
+        <test-method status="PASS" signature="readHTMLtable()[pri:0, instance:advanced.HTMLtable@12028586]" name="readHTMLtable" duration-ms="78021" started-at="2021-06-01T17:50:43 IST" finished-at="2021-06-01T17:52:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bootStrapDropDown2 -->
-      </class> <!-- basics.Day_19 -->
+        </test-method> <!-- readHTMLtable -->
+      </class> <!-- advanced.HTMLtable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

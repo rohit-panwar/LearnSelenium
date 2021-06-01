@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.Day_15">
+      <class name="advanced.ChatPopupHandle">
         <methods>
-          <include name="dynamicGoogleSearch"/>
+          <include name="closeChatPopup"/>
         </methods>
-      </class> <!-- basics.Day_15 -->
+      </class> <!-- advanced.ChatPopupHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

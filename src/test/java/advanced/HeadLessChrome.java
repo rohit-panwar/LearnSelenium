@@ -10,7 +10,7 @@ public class HeadLessChrome {
 	
 	@Test
 	public void headLessTesting() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("window-size=1400,800");

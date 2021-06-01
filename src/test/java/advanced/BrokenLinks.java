@@ -18,8 +18,9 @@ public class BrokenLinks {
 	@Test
 	public void findBrokenLinks() throws MalformedURLException, IOException {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		driver.get("http://test1.absofttrainings.com/");
 
