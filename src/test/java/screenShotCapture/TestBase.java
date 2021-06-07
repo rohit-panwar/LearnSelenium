@@ -15,8 +15,8 @@ public class TestBase {
 
 	public static void initilization() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://www.google.com");
 	}
@@ -24,9 +24,8 @@ public class TestBase {
 	public void takeScreenShot(String name) {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(srcFile,
-					new File("C:\\Users\\Rohit\\eclipse-workspace\\LearnSelenium\\src\\test\\java\\screenShotCapture\\"
-							+ name + ".jpg"));
+			FileUtils.copyFile(srcFile, new File(
+					System.getProperty("user.dir") + "\\src\\test\\java\\screenShotCapture\\" + name + ".jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

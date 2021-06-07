@@ -9,7 +9,7 @@ public class URL_authentication {
 	@Test
 	public void basic_auth() {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		
 		driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth");
