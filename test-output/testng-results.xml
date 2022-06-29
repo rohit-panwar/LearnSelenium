@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11287" started-at="2021-06-07T18:12:36 IST" finished-at="2021-06-07T18:12:47 IST">
+  <suite name="Suite" duration-ms="17683" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11287" started-at="2021-06-07T18:12:36 IST" finished-at="2021-06-07T18:12:47 IST">
-      <class name="dataDriven.TestDataDriven">
-        <test-method status="PASS" signature="readDataFromExcel()[pri:0, instance:dataDriven.TestDataDriven@679b62af]" name="readDataFromExcel" duration-ms="11255" started-at="2021-06-07T18:12:36 IST" finished-at="2021-06-07T18:12:47 IST">
+    <test name="Test" duration-ms="17683" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:38 IST">
+      <class name="testNGParallerExecution.ParallerTest">
+        <test-method status="PASS" signature="lanuchChrome()[pri:0, instance:testNGParallerExecution.ParallerTest@226a82c4]" name="lanuchChrome" duration-ms="10630" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readDataFromExcel -->
-      </class> <!-- dataDriven.TestDataDriven -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- lanuchChrome -->
+        <test-method status="PASS" signature="launchFirefox()[pri:0, instance:testNGParallerExecution.ParallerTest@226a82c4]" name="launchFirefox" duration-ms="17628" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFirefox -->
+      </class> <!-- testNGParallerExecution.ParallerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -61,8 +61,9 @@ public class BrokenLinks {
 					.openConnection();
 			connection.connect();
 			String response=connection.getResponseMessage();
+			int responseCode=connection.getResponseCode();
 			connection.disconnect();
-			System.out.println((j+1)+". "+activeLinks.get(j).getAttribute("href")+"--->"+response);
+			System.out.println((j+1)+". "+activeLinks.get(j).getAttribute("href")+"--->"+response+":"+responseCode);
 		}
 		
 		driver.quit();

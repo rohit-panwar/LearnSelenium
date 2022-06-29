@@ -45,8 +45,10 @@ public class Day_6 {
 		for (int i = 0; i < allLink.size(); i++) {
 			if (allLink.get(i).getText().isEmpty())
 				System.out.println("Sr.No.#" + i + " BLANK");
-			else
+			else {
 				System.out.println("Sr.No.#" + i + " " + allLink.get(i).getText());
+				System.out.println("Sr.No.#" + i + " " + allLink.get(i).getAttribute("href"));
+			}
 		}
 	}
 

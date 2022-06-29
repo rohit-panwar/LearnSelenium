@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDriven.TestDataDriven">
+      <class name="testNG.Basic_Two">
         <methods>
-          <include name="readDataFromExcel"/>
+          <include name="testCaseEight"/>
+          <include name="testCaseFine"/>
         </methods>
-      </class> <!-- dataDriven.TestDataDriven -->
+      </class> <!-- testNG.Basic_Two -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
