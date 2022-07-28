@@ -6,6 +6,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Day_1 {
 
 	@Test
@@ -35,5 +37,13 @@ public class Day_1 {
 		System.out.println(driver.getTitle());
 		driver.quit();
 
+	}
+	
+	@Test
+	public void chrome() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.google.co.in/");
+		driver.quit();
 	}
 }
