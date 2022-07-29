@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.Day_1">
+      <class name="basics.Day_6">
         <methods>
-          <include name="launchFirefox"/>
-          <include name="lanuchChrome"/>
+          <include name="dynamicXpath"/>
         </methods>
-      </class> <!-- basics.Day_1 -->
+      </class> <!-- basics.Day_6 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
