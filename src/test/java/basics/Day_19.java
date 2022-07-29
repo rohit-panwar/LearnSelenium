@@ -12,9 +12,10 @@ public class Day_19 {
 
 	@Test
 	public void bootStrapDropDown1() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
 		driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
 
 		driver.findElement(By.xpath("//button[contains(@class,'multiselect dropdown')]")).click();
@@ -31,9 +32,10 @@ public class Day_19 {
 
 	@Test
 	public void bootStrapDropDown2() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
 		driver.get("http://v4-alpha.getbootstrap.com/components/dropdowns/");
 
 		driver.findElement(By.id("dropdownMenuButton")).click();

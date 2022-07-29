@@ -12,17 +12,17 @@ public class Day_8 {
 	
 	@Test
 	public void windowHandlers() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		
 		//Launch the home page
-		driver.get("http://popuptest.com/goodpopups.html");
+		driver.get("http://www.seleniumframework.com/Practiceform/");
 		System.out.println(driver.getTitle());
 		
 		// Click on popup link
-		driver.findElement(By.linkText("Good PopUp #2")).click();
-		System.out.println(driver.getTitle());
-		
+		driver.findElement(By.xpath("//button[@id='button1']")).click();
+				
 		// Store all window in handler
 		Set<String> handler= driver.getWindowHandles();
 		Iterator<String> it= handler.iterator();
@@ -37,7 +37,9 @@ public class Day_8 {
 		
 		// Switch to child window
 		driver.switchTo().window(childWindowId);
+		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
+		driver.findElement(By.xpath("//span[text()='CONTACT']/parent::a")).click();
 		
 		// Close only child window
 		driver.close();
@@ -52,8 +54,9 @@ public class Day_8 {
 	
 	@Test
 	public void filePopup() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		
 		//Launch the home page
 		driver.get("https://html.com/input-type-file/");

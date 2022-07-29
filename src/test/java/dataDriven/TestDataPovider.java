@@ -2,6 +2,7 @@ package dataDriven;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -13,48 +14,48 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestDataPovider {
-	
+
 	WebDriver driver;
-	
+
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://www.freecontactform.com/html_form.php");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.get("https://www.freecontactform.com/forms/contact-form-free");
 	}
-	
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
-	
+
 	@DataProvider
 	public Iterator<Object[]> getData() {
-		ArrayList<Object[]> testData=DataProvideExcelReader.getDataFromExcel();
+		ArrayList<Object[]> testData = DataProvideExcelReader.getDataFromExcel();
 		return testData.iterator();
 	}
-	
-	@Test(dataProvider="getData")
-	public void dataProviderTest(String fname, String lname, String email, String phone, String comment) {
-		
-		driver.findElement(By.name("first_name")).clear();
-		driver.findElement(By.name("first_name")).sendKeys(fname);
 
-		driver.findElement(By.name("last_name")).clear();
-		driver.findElement(By.name("last_name")).sendKeys(lname);
+	@Test(dataProvider = "getData")
+	public void dataProviderTest(String name, String email, String phone, String comment) {
 
-		driver.findElement(By.name("email")).clear();
-		driver.findElement(By.name("email")).sendKeys(email);
+		driver.switchTo().frame(0);
+		driver.findElement(By.name("Name")).clear();
+		driver.findElement(By.name("Name")).sendKeys(name);
 
-		driver.findElement(By.name("telephone")).clear();
-		driver.findElement(By.name("telephone")).sendKeys(phone);
+		// driver.findElement(By.name("last_name")).clear();
+		// driver.findElement(By.name("last_name")).sendKeys(lname);
 
-		driver.findElement(By.xpath("//textarea[@name='comments']")).clear();
-		driver.findElement(By.xpath("//textarea[@name='comments']")).sendKeys(comment);
+		driver.findElement(By.name("Email")).clear();
+		driver.findElement(By.name("Email")).sendKeys(email);
 
-		driver.findElement(By.xpath("//input[@value=' Submit Form ']")).click();
-		Alert alert = driver.switchTo().alert();
-		alert.accept();
+		driver.findElement(By.name("Phone")).clear();
+		driver.findElement(By.name("Phone")).sendKeys(phone);
+
+		driver.findElement(By.xpath("//textarea[@name='Message']")).clear();
+		driver.findElement(By.xpath("//textarea[@name='Message']")).sendKeys(comment);
 	}
 
 }

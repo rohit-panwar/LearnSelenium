@@ -24,8 +24,9 @@ public class BarCodeReader {
 	@Test
 	public void readBarCode() throws IOException, NotFoundException {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		// driver.get("https://barcode.tec-it.com/en");
 		driver.get(

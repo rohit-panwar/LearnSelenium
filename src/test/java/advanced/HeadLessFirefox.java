@@ -14,7 +14,7 @@ public class HeadLessFirefox {
 		FirefoxBinary firefoxBinary= new FirefoxBinary();
 		firefoxBinary.addCommandLineOptions("--headless");
 		
-		System.setProperty("webdriver.gecko.driver", "D:\\Webdriver\\drivers\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
 		
 		FirefoxOptions options= new FirefoxOptions();
 		options.setBinary(firefoxBinary);

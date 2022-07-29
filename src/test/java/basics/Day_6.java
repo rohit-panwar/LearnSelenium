@@ -13,9 +13,10 @@ public class Day_6 {
 	@Test
 	public void dynamicXpath() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
 		driver.get("http://test1.absofttrainings.com/my-account/");
 
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("testuser1");
@@ -32,9 +33,10 @@ public class Day_6 {
 	@Test
 	public void findAllLinks() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
-
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
 		driver.get("http://test1.absofttrainings.com/");
 
 		List<WebElement> allLink = driver.findElements(By.tagName("a"));
@@ -43,8 +45,10 @@ public class Day_6 {
 		for (int i = 0; i < allLink.size(); i++) {
 			if (allLink.get(i).getText().isEmpty())
 				System.out.println("Sr.No.#" + i + " BLANK");
-			else
+			else {
 				System.out.println("Sr.No.#" + i + " " + allLink.get(i).getText());
+				System.out.println("Sr.No.#" + i + " " + allLink.get(i).getAttribute("href"));
+			}
 		}
 	}
 

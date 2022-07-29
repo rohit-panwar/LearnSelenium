@@ -14,8 +14,9 @@ public class Day_7 {
 	@Test
 	public void navigation() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		driver.get("https://www.google.com/");
 		System.out.println("In Google");
@@ -29,8 +30,9 @@ public class Day_7 {
 
 	@Test
 	public void takeScreenshot() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		driver.get("https://www.google.com/");
 		//File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -40,8 +42,9 @@ public class Day_7 {
 	@Test
 	public void explicitWait() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		driver.get("http://test1.absofttrainings.com/my-account/");
 		clickOn(driver, driver.findElement(By.name("login")), 10);

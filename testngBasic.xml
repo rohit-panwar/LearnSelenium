@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test Basic">
+		<classes>
+			<class name="testNG.Basic_Two" />
+			<class name="testNG.Basic_One" />
+			<class name="testNG.Basic_IncludeExcludeMethods">
+				<methods>
+					<exclude name="testCase32" />
+					<include name="testCase33" />
+				</methods>
+			</class>
+			<class name="testNG.Basic_Parameter">
+				<parameter name="a" value="10"/>
+				<parameter name="b" value="5"/>
+				<parameter name="mango" value="Alphanso"/>
+				<parameter name="orange" value="Oranges"/>
+			</class>
+		</classes>
+	</test> <!-- Test Basic -->
+	<test name="Run test case as per the groups">
+		<groups>
+			<run>
+				<include name="Smoke Test" />
+				<exclude name="Unit Test" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.Basic_Groups" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

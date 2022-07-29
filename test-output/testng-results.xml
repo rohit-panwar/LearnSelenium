@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -95,4 +96,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- basics.Day_6 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17683" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:38 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17683" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:38 IST">
+      <class name="testNGParallerExecution.ParallerTest">
+        <test-method status="PASS" signature="lanuchChrome()[pri:0, instance:testNGParallerExecution.ParallerTest@226a82c4]" name="lanuchChrome" duration-ms="10630" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchChrome -->
+        <test-method status="PASS" signature="launchFirefox()[pri:0, instance:testNGParallerExecution.ParallerTest@226a82c4]" name="launchFirefox" duration-ms="17628" started-at="2022-06-29T17:54:20 IST" finished-at="2022-06-29T17:54:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFirefox -->
+      </class> <!-- testNGParallerExecution.ParallerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+>>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 </testng-results>

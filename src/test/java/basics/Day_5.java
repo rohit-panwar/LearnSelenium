@@ -3,6 +3,7 @@ package basics;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,12 +13,11 @@ import org.testng.annotations.Test;
 public class Day_5 {
 
 	@Test
-	public void moveToElement() {
-		// System.setProperty("webdriver.ie.driver","D:\\Webdriver\\drivers\\IEDriverServer.exe");
-		// WebDriver driver = new InternetExplorerDriver();
-
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+	public void moveToElement() throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -27,15 +27,18 @@ public class Day_5 {
 
 		driver.get("https://html.com/");
 
-		WebElement w1 = driver.findElement(By.partialLinkText("About"));
+		Thread.sleep(5000);
+		WebElement w1 = driver.findElement(By.xpath("(//a[text()='About'])[2]"));
 		Actions action = new Actions(driver);
 		action.moveToElement(w1).build().perform();
+		Thread.sleep(5000);
+		driver.quit();
 	}
 
 	@Test
 	public void dragAndDrop() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		driver.manage().deleteAllCookies();
@@ -53,6 +56,29 @@ public class Day_5 {
 
 		Actions action = new Actions(driver);
 		action.clickAndHold(w2).moveToElement(w3).release().build().perform();
+	}
+	
+	@Test(description="Keyboard Events")
+	public void keyBorad() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		driver.get("http://www.seleniumframework.com/Practiceform/");
+		WebElement w1=driver.findElement(By.name("email"));
+		w1.sendKeys("India");
+				
+		Actions actions= new Actions(driver);
+		
+		actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
+		actions.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).build().perform();
+		actions.sendKeys(Keys.TAB).build().perform();
+		actions.sendKeys(Keys.TAB).build().perform();
+		actions.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();
+		actions.sendKeys(Keys.ENTER).build().perform();
+		//actions.contextClick().build().perform();
+		//Thread.sleep(2000);
+		actions.contextClick(w1).build().perform();
 	}
 
 }

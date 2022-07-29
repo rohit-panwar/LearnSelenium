@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: Rohit
 Build-Jdk: 17.0.3
+=======
+Built-By: rohit_panwar
+Build-Jdk: 1.8.0_261
+>>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 Created-By: Maven Integration for Eclipse
 
