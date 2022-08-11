@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Day_1 {
 
 	@Test
@@ -38,6 +40,14 @@ public class Day_1 {
 	}
 	
 	@Test
+<<<<<<< HEAD
+	public void chrome() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.google.co.in/");
+		driver.quit();
+	}
+=======
 	public void launchEDGE() {
 		System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\Drivers\\msedgedriver.exe");
 		WebDriver driver= new EdgeDriver();
@@ -46,4 +56,5 @@ public class Day_1 {
 		driver.quit();
 	}
 
+>>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 }

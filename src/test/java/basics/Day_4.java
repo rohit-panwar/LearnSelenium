@@ -12,16 +12,29 @@ import org.testng.annotations.Test;
 public class Day_4 {
 
 	@Test
+<<<<<<< HEAD
+	public void alertTest() {
+
+		System.setProperty("webdriver.ie.driver", "D:\\Webdriver\\drivers\\IEDriverServer.exe");
+		WebDriver driver = new InternetExplorerDriver();
+=======
 	public void alertTest() throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+>>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 
 		driver.findElement(By.name("proceed")).click();
 		Alert a = driver.switchTo().alert();
+<<<<<<< HEAD
+		a.accept();
+
+		// a.dismiss();
+	}
+=======
 		System.out.println(a.getText());
 		Thread.sleep(2000);
 		a.accept();
@@ -62,4 +75,5 @@ public class Day_4 {
 		driver.quit();
 	}
 
+>>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 }
