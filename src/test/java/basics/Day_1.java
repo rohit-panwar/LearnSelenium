@@ -40,14 +40,14 @@ public class Day_1 {
 	}
 	
 	@Test
-<<<<<<< HEAD
 	public void chrome() {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://www.google.co.in/");
 		driver.quit();
 	}
-=======
+
+	@Test
 	public void launchEDGE() {
 		System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\Drivers\\msedgedriver.exe");
 		WebDriver driver= new EdgeDriver();
@@ -56,5 +56,4 @@ public class Day_1 {
 		driver.quit();
 	}
 
->>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 }
