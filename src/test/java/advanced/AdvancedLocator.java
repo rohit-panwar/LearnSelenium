@@ -17,12 +17,10 @@ public class AdvancedLocator {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-<<<<<<< HEAD
-		driver.get("https://www.facebook.com/");
+		//driver.get("https://www.facebook.com/");
 
-=======
+
 		driver.get("https://www.facebook.com/r.php?locale=en_IN&display=page");
->>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
 		driver.findElement(
 				new ByAll(By.id("u_0_n"), By.name("firstname"), By.xpath("//input[@aria-label='First name']")))
 				.sendKeys("Rohit");
@@ -32,16 +30,15 @@ public class AdvancedLocator {
 		driver.findElement(new ByIdOrName("lastname")).sendKeys("Panwar");
 		// Need to provide either NAME or ID
 
-<<<<<<< HEAD
 		driver.findElement(new ByChained(By.id("u_0_q"), By.id("u_0_r"),
 				By.xpath("//div[@class='uiStickyPlaceholderInput uiStickyPlaceholderEmptyInput']"),
 				By.name("reg_email__")))
 				.sendKeys("66468464");
 		// It will find element in Parent-Child changing
-=======
-		driver.findElement(new ByChained(By.id("fullname_field"), By.className("uiStickyPlaceholderInput"), By.xpath("input[@name='lastname']"))).sendKeys("abc");
+
+		//driver.findElement(new ByChained(By.id("fullname_field"), By.className("uiStickyPlaceholderInput"), By.xpath("input[@name='lastname']"))).sendKeys("abc");
 		// It will find element in Parent Child changing
 
->>>>>>> d6edd99e2e17688388f14af192a390fb48a5f060
+
 	}
 }
